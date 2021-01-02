@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import Scss from './header.module.scss'
+import Scss from "./header.module.scss"
+import NavList from "./Navigation/navigationList"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
@@ -8,16 +9,14 @@ const Header = ({ siteTitle }) => (
     <nav className={Scss.Nav}>
       <div className={Scss.NavBrand}>
         <div className={Scss.NavBrandIcon}></div>
-        <Link to="/" className={Scss.NavBrandName}>FarmE</Link>
-      </div>
-      <div className={Scss.NavMenu}>
-        <ul className={Scss.NavMenuList}>
-          <li className="Scss.NavMenuListItem">2</li>
-          <li className="Scss.NavMenuListItem">2</li>
-          <li className="Scss.NavMenuListItem">2</li>
-        </ul>
+        <Link to="/" className={Scss.NavBrandName}>
+          {siteTitle}
+        </Link>
       </div>
 
+      <div className={Scss.NavMenu}>
+        <NavList />
+      </div>
     </nav>
   </header>
 )

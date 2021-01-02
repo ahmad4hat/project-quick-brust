@@ -1,0 +1,35 @@
+.Item{
+    display: flex;
+    flex-direction: row;
+    &Inside{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+.Text {
+    margin: 0;
+    font-size: var(--h4-size);
+    font-weight: bold;
+}
+
+.MarginBetweenItem{
+    margin: 0 2rem;
+}
+
+
+.VLine{
+    display: none;
+    width: 0.25rem;
+    background-color:var(--primary-color);
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.HLine{
+    margin-top: 0.5rem;
+    display: block;
+    height: 0.25rem;
+    background-color:var(--primary-color);
+    border-radius: 0.5rem;
+}
