@@ -5,11 +5,11 @@
         display: flex;
         flex-direction: column;
     }
-
 }
 .Text {
     margin: 0;
-    font-size: var(--h4-size);
+    font-size: 1rem;
+    // font-size: var(--h4-size);
     font-weight: bold;
 }
 

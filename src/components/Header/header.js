@@ -5,7 +5,11 @@ import NavList from "./Navigation/navigationList"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header
+    style={{
+      marginBottom: "6rem",
+    }}
+  >
     <nav className={Scss.Nav}>
       <div className={Scss.NavBrand}>
         <div className={Scss.NavBrandIcon}></div>
