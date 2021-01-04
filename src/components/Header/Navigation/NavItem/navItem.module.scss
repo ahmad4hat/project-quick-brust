@@ -1,13 +1,16 @@
 .Item{
+    color: var(--dark-1);
+    text-decoration: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     &Inside{
         display: flex;
         flex-direction: column;
     }
 }
 .Text {
-    margin: 0;
+    margin-bottom: 0.5rem;
+    // margin: 0;   
     font-size: 1rem;
     // font-size: var(--h4-size);
     font-weight: bold;
@@ -15,6 +18,21 @@
 
 .MarginBetweenItem{
     margin: 0 2rem;
+}
+
+.Active{
+    // border-bottom:solid var(--primary-color) .5rem ;
+    // border-radius:10px 10px 10px 10px;
+    &::after{
+        display: inline-block;
+        margin-top: 0.2rem;
+        content: "";
+        background-color: var(--primary-color);
+        height: 0.5rem;
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+    
 }
 
 

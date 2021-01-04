@@ -6,9 +6,9 @@ const navigationList = () => {
   return (
     <ul className={Scss.List}>
       {/* <li>2</li> */}
-      <NavItem url="heelo">Home</NavItem>
-      <NavItem url="heelo">About</NavItem>
-      <NavItem url="heelo">Team</NavItem>
+      <NavItem url="/">Home</NavItem>
+      <NavItem url="/about">About</NavItem>
+      <NavItem url="/team">Team</NavItem>
     </ul>
   )
 }
