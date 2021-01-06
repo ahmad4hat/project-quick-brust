@@ -1,0 +1,12 @@
+@import "./../../../../extra/variables.scss";
+
+.Toolbar{
+    display: none;
+    
+    @media only screen and (min-width: $md) {
+        
+        display: flex;
+        flex-direction: row;
+       
+    }
+}

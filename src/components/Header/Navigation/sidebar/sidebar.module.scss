@@ -1,0 +1,28 @@
+@import "../../../../extra/variables.scss";
+
+
+.SideBar
+{
+    position: fixed;
+    width: 18rem;
+    max-width: 70%;
+    height: 100%;
+    right:0;
+    top:0;
+    z-index: var(--zindex-2);
+    background-color: white;
+    padding: 4rem 1px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+    
+        
+        
+        @media only screen and (min-width: $md) {
+            
+            display: none;
+            
+           
+        
+    }
+
+}

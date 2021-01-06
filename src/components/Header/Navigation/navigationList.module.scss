@@ -1,9 +1,26 @@
+// $md:var(--md)
+
+@import "./../../../extra/variables.scss";
 .List{
     list-style: none;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     margin: 0;
     padding: 0;
     align-items: center;
+    // padding: $md;
+
+    // @media only screen and (min-width: var(--md)){
+    //     display: flex;
+    //     color:red;
+    //     flex-flow: row;
+        
+    // }
+    @media only screen and (min-width: $md) {
+        
+        display: flex;
+        flex-flow: row;
+       
+    }
     
 }

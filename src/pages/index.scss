@@ -1,3 +1,4 @@
+
 :root{
 
     --default-rem:16px;
@@ -15,8 +16,15 @@
     --spacer-2:1.25rem;
     --dark-1:#111813;
     --secondary-light:#E9EDEA;
-    
+    --zindex-1:1000;
+    --zindex-2:2000;
+
+    //size
+   
 }
+
+
+
 
 html {
     box-sizing: border-box;
@@ -44,3 +52,4 @@ body{
     margin: 0;
     
 }
+

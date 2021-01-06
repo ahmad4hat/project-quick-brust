@@ -1,53 +1,83 @@
-.Item{
-    color: var(--dark-1);
-    text-decoration: none;
-    display: flex;
+@import "../../../../extra/variables.scss";
+.Item {
+  color: var(--dark-1);
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+  // margin: 0;
+  //   font-size: 1rem;
+  font-size: var(--h4-size);
+  opacity: 80%;
+  font-weight: bold;
+  @media only screen and (min-width: $md) {
     flex-direction: column;
-    &Inside{
-        display: flex;
-        flex-direction: column;
+  }
+  &Inside {
+    display: flex;
+    flex-direction: row;
+    @media only screen and (min-width: $md) {
+      flex-direction: column;
     }
+  }
 }
+
+.Active {
+  opacity: 100%;
+  //   border-bottom: solid var(--primary-color) 0.5rem;
+  //   border-radius: 2px 2px 2px 2px;
+  //   color: var(--primary-color);
+  //   &::after {
+  //     display: inline-block;
+  //     order: 1;
+  //     margin-left: 0.2rem;
+  //     content: "";
+  //     background-color: var(--primary-color);
+  //     width: 0.5rem;
+  //     height: 100%;
+  //     border-radius: 0.5rem;
+
+  //     @media only screen and (min-width: $md) {
+  //       //   display: inline-block;
+  //       margin-top: 0.2rem;
+  //       content: "";
+  //       background-color: var(--primary-color);
+  //       height: 0.5rem;
+  //       width: 100%;
+  //       border-radius: 0.5rem;
+  //     }
+  //   }
+}
+
 .Text {
-    margin-bottom: 0.5rem;
-    // margin: 0;   
-    font-size: 1rem;
-    // font-size: var(--h4-size);
-    font-weight: bold;
+  //   margin-bottom: 0.5rem;
+  //   // margin: 0;
+  //   //   font-size: 1rem;
+  //   font-size: var(--h4-size);
+  //   opacity: 40%;
+  //   font-weight: bold;
 }
 
-.MarginBetweenItem{
+.MarginBetweenItem {
+  margin: 2rem 2rem;
+  @media only screen and (min-width: $md) {
+    //   display: inline-block;
     margin: 0 2rem;
+  }
 }
 
-.Active{
-    // border-bottom:solid var(--primary-color) .5rem ;
-    // border-radius:10px 10px 10px 10px;
-    &::after{
-        display: inline-block;
-        margin-top: 0.2rem;
-        content: "";
-        background-color: var(--primary-color);
-        height: 0.5rem;
-        width: 100%;
-        border-radius: 0.5rem;
-    }
-    
+.VLine {
+  display: none;
+  width: 0.25rem;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
 }
 
-
-.VLine{
-    display: none;
-    width: 0.25rem;
-    background-color:var(--primary-color);
-    border-radius: 0.5rem;
-    margin-right: 0.5rem;
-}
-
-.HLine{
-    margin-top: 0.5rem;
-    display: block;
-    height: 0.25rem;
-    background-color:var(--primary-color);
-    border-radius: 0.5rem;
+.HLine {
+  margin-top: 0.5rem;
+  display: block;
+  height: 0.25rem;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
 }
