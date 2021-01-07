@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Scss from "./landing.module.scss"
 import earth from "./earth.svg"
+import { motion } from "framer-motion"
 
 const landing = props => {
   return (
@@ -14,9 +15,14 @@ const landing = props => {
           <div className={Scss.BtnStretch}>Learn More</div>
         </div>
       </div>
-      <div className={Scss.LandingImg}>
+      <motion.div
+        initial={{ y: -16 }}
+        animate={{ y: 16 }}
+        transition={{ repeat: Infinity, repeatType: "reverse", duration: 2 }}
+        className={Scss.LandingImg}
+      >
         <img src={earth}></img>
-      </div>
+      </motion.div>
     </div>
   )
 }

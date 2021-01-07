@@ -1,0 +1,12 @@
+.Footer {
+  background-color: var(--dark-1);
+  color: white;
+  margin-top: 4rem;
+  padding: 2rem;
+  &Content {
+    width: 80%;
+    margin: 0 auto;
+    font-size: var(--h4-size);
+    text-align: center;
+  }
+}
