@@ -40,23 +40,28 @@ const Header = ({ siteTitle }) => {
         </div>
 
         <Toolbar />
-        <Sidebar isOpen={sideDrawerIsVisible} close={sideDrawerClosedHandler} />
+        <div className={Scss.Visibility}>
+          <Sidebar
+            isOpen={sideDrawerIsVisible}
+            close={sideDrawerClosedHandler}
+          />
 
-        <div onClick={sideDrawerOpenHandler}>
-          <svg
-            width="24"
-            hight="24"
-            viewBox="0 0 18 18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g fill="black">
-              <path
-                d="M18 12H9V10H18V12ZM18 7H0V5H18V7ZM18 2H0V0H18V2Z"
-                // fill="#2E3A59"
-                // stroke="blue"
-              />
-            </g>
-          </svg>
+          <div onClick={sideDrawerOpenHandler}>
+            <svg
+              width="24"
+              hight="24"
+              viewBox="0 0 18 18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="black">
+                <path
+                  d="M18 12H9V10H18V12ZM18 7H0V5H18V7ZM18 2H0V0H18V2Z"
+                  // fill="#2E3A59"
+                  // stroke="blue"
+                />
+              </g>
+            </svg>
+          </div>
         </div>
       </div>
     </header>
