@@ -8,14 +8,17 @@ import { motion } from "framer-motion"
 const sidebar = props => {
   return (
     <>
-      <motion.div>
+      <motion.div animate={{ opacity: props.isOpen ? 1 : 0 }}>
         <BackDrop show={props.isOpen} clicked={props.close} />
       </motion.div>
 
       <motion.div
         // initial={{ x: "100%" }}
-        animate={{ x: props.isOpen ? 20 : "100%" }}
-        transition={{ type: "spring", stiffness: 100, damping: 20 }}
+        animate={{
+          x: props.isOpen ? 40 : "100%",
+          opacity: props.isOpen ? 1 : 0,
+        }}
+        transition={{ type: "spring" }}
         className={Scss.SideBar}
         onClick={props.close}
       >

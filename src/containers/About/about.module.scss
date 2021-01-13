@@ -1,0 +1,21 @@
+.About {
+  //   background-image: url("./images/about.jpg");
+  width: 80%;
+  margin: 0 auto;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  &Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &Title {
+    font-size: var(--h1-size);
+    margin-top: var(--spacer-2);
+    margin-bottom: var(--spacer-1);
+    font-weight: bold;
+  }
+  &Text {
+  }
+}

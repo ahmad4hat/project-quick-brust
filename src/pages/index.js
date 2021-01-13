@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Landing from "./../components/Landing/landing"
+import Landing from "./../containers/Landing/landing"
 
 import "./index.scss"
 
