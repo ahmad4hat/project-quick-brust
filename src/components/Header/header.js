@@ -26,9 +26,9 @@ const Header = ({ siteTitle }) => {
       setScrolled(false)
     }
   }
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
-  })
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll)
+  // }, [window])
   return (
     <header className={[Scss.Header, scrolled ? Scss.Sticky : ""].join(" ")}>
       <div className={Scss.Nav}>

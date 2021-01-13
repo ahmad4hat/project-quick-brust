@@ -6,7 +6,11 @@ import { motion } from "framer-motion"
 
 const landing = props => {
   return (
-    <div className={Scss.LandingContainer}>
+    <motion.div
+      initial={{ x: -100 }}
+      animate={{ x: 0 }}
+      className={Scss.LandingContainer}
+    >
       <div className={Scss.LandingInfo}>
         <div>
           <h1 className={Scss.LandingInfoText}>
@@ -23,7 +27,7 @@ const landing = props => {
       >
         <img src={earth}></img>
       </motion.div>
-    </div>
+    </motion.div>
   )
 }
 

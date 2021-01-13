@@ -10,16 +10,16 @@ const about = () => {
   // }
   return (
     <div className={Scss.About}>
-      <motion.div initial={{ x: -1000 }} animate={{ x: 0 }}>
+      <motion.div initial={{ x: -100 }} animate={{ x: 0 }}>
         <Image />
       </motion.div>
-      <motion.div 
+      <motion.div
         initial={{ y: "-100%" }}
-        animate={{ y: 20 }}
+        animate={{ y: 0 }}
         className={Scss.AboutContainer}
       >
         <h1 className={Scss.AboutTitle}>About us</h1>
-        <p>
+        <p className={Scss.AboutText}>
           We are trying to solve the difficult but important problem of
           connection customer with farmer with as little middle man as possible.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
