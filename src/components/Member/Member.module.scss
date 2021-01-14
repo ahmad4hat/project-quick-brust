@@ -1,0 +1,26 @@
+.Card {
+  display: flex;
+  flex-flow: column;
+  box-shadow: 0px 4px 150px rgba(0, 0, 0, 0.25);
+  border-radius: 4%;
+  padding: 2rem;
+  margin: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.Name {
+  font-size: var(--h2-size);
+  margin-top: var(--spacer-2);
+  margin-bottom: var(--spacer-2);
+}
+
+.ImgContainer {
+  //   height: 20rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.Img {
+  // border-radius: 50%;
+}
