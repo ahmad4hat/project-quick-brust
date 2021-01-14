@@ -49,7 +49,7 @@ const Team = props => {
       <Member
         image={data.placeholder.childImageSharp.fluid}
         name={"Placeholder"}
-        role={"Test"}
+        role={"Game tester and stuff"}
         description={description}
       ></Member>
       {/* </div> */}

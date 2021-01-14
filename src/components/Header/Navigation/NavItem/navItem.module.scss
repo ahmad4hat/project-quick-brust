@@ -8,7 +8,7 @@
   // margin: 0;
   //   font-size: 1rem;
   font-size: var(--h4-size);
-  opacity: 80%;
+  opacity: 70%;
   font-weight: bold;
   @media only screen and (min-width: $md) {
     flex-direction: column;
@@ -23,10 +23,10 @@
 }
 
 .Active {
-
+  color: var(--primary-color-dark);
   opacity: 100%;
-//   border-bottom: solid var(--primary-color) 0.5rem;
-//   border-radius: 2px 2px 2px 2px;
+  //   border-bottom: solid var(--primary-color) 0.5rem;
+  //   border-radius: 2px 2px 2px 2px;
   //   color: var(--primary-color);
   //   &::after {
   //     display: inline-block;
