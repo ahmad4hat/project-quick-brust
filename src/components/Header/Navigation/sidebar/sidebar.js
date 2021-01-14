@@ -13,15 +13,17 @@ const sidebar = props => {
       </motion.div>
 
       <motion.div
+        onClick={e => e.stopPropagation()}
         // initial={{ x: "100%" }}
         animate={{
-          x: props.isOpen ? 40 : "100%",
+          x: props.isOpen ? 60 : "100%",
           opacity: props.isOpen ? 1 : 0,
+          // display: props.isOpen ? "block" : "none",
         }}
         transition={{ type: "spring" }}
         className={Scss.SideBar}
-        onClick={props.close}
       >
+        <h4 onClick={props.close}>Clear</h4>
         <Navlist></Navlist>
       </motion.div>
     </>

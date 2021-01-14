@@ -22,7 +22,7 @@ const landing = props => {
       <motion.div
         initial={{ y: -16 }}
         animate={{ y: 16 }}
-        transition={{ repeat: Infinity, repeatType: "reverse", duration: 2 }}
+        transition={{ repeat: Infinity, repeatType: "reverse", duration: 5 }}
         className={Scss.LandingImg}
       >
         <img src={earth}></img>

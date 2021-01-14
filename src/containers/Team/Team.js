@@ -28,7 +28,7 @@ const Team = props => {
 
   return (
     <motion.div
-      initial={{ x: "-20%" }}
+      initial={{ x: -100 }}
       animate={{ x: 0 }}
       className={Scss.Container}
     >
