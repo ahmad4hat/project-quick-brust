@@ -16,7 +16,13 @@ const landing = props => {
           <h1 className={Scss.LandingInfoText}>
             Connection Farmer with Consumer
           </h1>
-          <div className={Scss.BtnStretch}>Learn More</div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className={Scss.BtnStretch}
+          >
+            Learn More
+          </motion.div>
         </div>
       </div>
       <motion.div

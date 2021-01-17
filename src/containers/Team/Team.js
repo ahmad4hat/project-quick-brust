@@ -4,6 +4,24 @@ import PropTypes from "prop-types"
 import Scss from "./Team.module.scss"
 import Member from "./../../components/Member/Member"
 import { motion } from "framer-motion"
+
+const list = {
+  init: {
+    x: -100,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.3,
+    },
+  },
+  anime: {
+    x: 0,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.3,
+    },
+  },
+}
+
 const Team = props => {
   const data = useStaticQuery(graphql`
     {
@@ -28,8 +46,9 @@ const Team = props => {
 
   return (
     <motion.div
-      initial={{ x: -100 }}
-      animate={{ x: 0 }}
+      variants={list}
+      initial="init"
+      animate="anime"
       className={Scss.Container}
     >
       {/* <img src={ahmad.c}> </img> */}

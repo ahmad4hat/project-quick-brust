@@ -62,6 +62,7 @@ const Header = ({ siteTitle }) => {
               animate={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -500 }}
               whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.9 }}
             >
               <g fill="black">
                 <motion.path

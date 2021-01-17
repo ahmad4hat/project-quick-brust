@@ -11,7 +11,8 @@ const navItem = props => {
         {/* <div className={Scss.VLine}></div> */}
         <motion.div
           className={Scss.ItemInside}
-          whileHover={{ color: "#075446" }}
+          whileHover={{ color: "#075446", scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
           <div className={Scss.Text}>{props.children}</div>
           {/* <div className={Scss.HLine}></div> */}

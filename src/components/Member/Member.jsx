@@ -2,9 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import Scss from "./Member.module.scss"
 import Img from "gatsby-image"
+import { motion } from "framer-motion"
 
 const Member = props => {
-  console.log(props.role)
   return (
     <div className={Scss.Card}>
       <div className={Scss.ImgContainer}>
