@@ -4,12 +4,14 @@ import NavItem from "./NavItem/navItem"
 
 const navigationList = () => {
   return (
-    <ul className={Scss.List}>
-      {/* <li>2</li> */}
-      <NavItem url="/">Home</NavItem>
-      <NavItem url="/about">About</NavItem>
-      <NavItem url="/team">Team</NavItem>
-    </ul>
+    <nav>
+      <ul className={Scss.List}>
+        {/* <li>2</li> */}
+        <NavItem url="/">Home</NavItem>
+        <NavItem url="/about">About</NavItem>
+        <NavItem url="/team">Team</NavItem>
+      </ul>
+    </nav>
   )
 }
 export default navigationList
