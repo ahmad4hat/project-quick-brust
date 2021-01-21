@@ -57,19 +57,25 @@ const Team = props => {
         image={data.file.childImageSharp.fluid}
         name={"Ahmad, Farhat"}
         role={"Frontend and UI / UX"}
-        description={description}
+        // description={description}
       ></Member>
       <Member
         image={data.placeholder.childImageSharp.fluid}
-        name={"Placeholder"}
-        role={"Test"}
-        description={description}
+        name={"Z.M. Mohibul Islam"}
+        role={"Backend and Architecture"}
+        // description={"PlaceHolder text"}
       ></Member>
       <Member
         image={data.placeholder.childImageSharp.fluid}
-        name={"Placeholder"}
-        role={"Game tester and stuff"}
-        description={description}
+        name={"MD. Mridul Hossain"}
+        role={"Mobile Development And Research"}
+        // description={"placeholder text"}
+      ></Member>
+      <Member
+        image={data.placeholder.childImageSharp.fluid}
+        name={"Rezwan Ahmed"}
+        role={"Supervisor"}
+        // description={"placeholder text"}
       ></Member>
       {/* </div> */}
     </motion.div>

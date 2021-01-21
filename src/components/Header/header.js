@@ -60,7 +60,7 @@ const Header = ({ siteTitle }) => {
               viewBox="0 0 18 18"
               xmlns="http://www.w3.org/2000/svg"
               animate={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -500 }}
+              initial={{ opacity: 0, x: -500, transformOrigin: "50%" }}
               whileHover={{ scale: 1.3 }}
               whileTap={{ scale: 0.9 }}
             >

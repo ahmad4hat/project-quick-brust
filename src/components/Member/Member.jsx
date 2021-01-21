@@ -11,8 +11,8 @@ const Member = props => {
         <Img className={Scss.Img} fluid={props.image}></Img>
       </div>
       <h2 className={Scss.Name}>{props.name}</h2>
-      <h4>{props.role}</h4>
-      <p>{props.description}</p>
+      <h4 className={Scss.Role}>{props.role}</h4>
+      {/* <p>{props.description}</p> */}
     </div>
   )
 }
@@ -21,7 +21,7 @@ Member.propTypes = {
   image: PropTypes.object,
   name: PropTypes.string,
   role: PropTypes.string,
-  description: PropTypes.string,
+  // description: PropTypes.string,
 }
 
 export default Member

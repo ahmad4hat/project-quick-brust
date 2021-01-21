@@ -23,7 +23,7 @@ const sidebar = props => {
         transition={{ type: "spring" }}
         className={Scss.SideBar}
       >
-        <h4 onClick={props.close}>Clear</h4>
+        <div onClick={props.close}>X</div>
         <Navlist></Navlist>
       </motion.div>
     </>

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `FarmE`,
+    title: `Farmland`,
     description: `A landing page and style guide for my sp1 project`,
     author: `@Ahmad4hat`,
   },
